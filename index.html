@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Year 2022 Calendar</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="calendar-outer">
+    <div class="calendar-head">
+      <button class="previous nav-btn"><</button>
+      <div class="current-month"></div>
+      <button class="next nav-btn">></button>
+    </div>
+    <div class="calendar">
+      <div class="weekdays-name">
+        <div class="days-name">Sun</div>
+        <div class="days-name">Mon</div>
+        <div class="days-name">Tue</div>
+        <div class="days-name">Wed</div>
+        <div class="days-name">Thur</div>
+        <div class="days-name">Fri</div>
+        <div class="days-name">Sat</div>
+      </div>
+      <div class="calendar-days">
+      </div>
+      <div class="footer-calender-change">
+        <label id="change" for="month">Select Date:</label>
+        <select name="MONTH" id="month" onchange="jump()">
+          <option value="0">JAN</option>
+          <option value="1">FEB</option>
+          <option value="2">MAR</option>
+          <option value="3">APR</option>
+          <option value="4">MAY</option>
+          <option value="5">JUN</option>
+          <option value="6">JUL</option>
+          <option value="7">AUG</option>
+          <option value="8">SEP</option>
+          <option value="9">OCT</option>
+          <option value="10">NOV</option>
+          <option value="11">DEC</option>
+        </select>
+        <select name="YEAR" id="year" onchange="jumpYear()"></select>
+      </div>
+    </div>
+  </div>
+  <ul id="highlights">
+  </ul>
+   <script src="scripts.js" charset="utf-8"></script>
+  
+</body>
+
+</html>
